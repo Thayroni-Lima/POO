@@ -1,11 +1,13 @@
 import java.util.List;
 
-public class ConsultarLivro {
+public class ConsultarLivros {
+    private Acervo acervo;
 
-  private Acervo acervo;
+    public ConsultarLivros(Acervo acervo) {
+        this.acervo = acervo;
+    }
 
-  public ConsultarLivro(acervo acervo) {this.acervo = acervo; } 
-
-  public List<List> consultarlivros() {return acervo.ConsultarLivros(); }
-
+    public List<Livro> consultarLivros() {
+        return acervo.consultarLivros();
+    }
 }
